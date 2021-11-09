@@ -1,0 +1,259 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sciencey Quiz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    input.btn {
+      border: 1px;
+      border-color: #fff;
+      color: #28A745;
+      background-color: #fff;
+      margin-top: 20px;
+    }
+    input.btn:hover {
+      /*margin-top: 0px;*/
+      box-shadow: 0px 0px 2px 1px #fff;
+      color: #28A745;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="intro py-3 bg-white text-center">
+    <div class="container">
+      <h2 class="text-success display-3 my-4">Are you sciencey?</h2>
+    </div>
+  </div>
+
+  <!-- QUIZ RESULTS -->
+  <div class="result py-4 d-none bg-light text-center">
+    <div class="container lead">
+      <p>You are <span class="text-success display-4 p-3">0%</span> sciencey</p>
+    </div>
+  </div>
+
+  <!-- QUIZ SECTION -->
+  <div class="quiz py-4 bg-success">
+    <div class="container">
+      <h2 class="my-5 text-white">Let's get cracking...</h2>
+
+      <form class="quiz-form text-light">
+          <!-- QUESTION 1 -->
+        <div class="my-5">
+          <p class="lead font-weight-normal">1. What is the largest planet in the solar system?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="A" checked>
+            <label class="form-check-label">Saturn</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="B">
+            <label class="form-check-label">Jupiter</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="C">
+            <label class="form-check-label">Mars</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="D">
+            <label class="form-check-label">None of the above</label>
+          </div>
+        </div>
+        <!-- QUESTION 2 -->
+        <div class="my-5">
+          <p class="lead font-weight-normal">2. The earth has three layers of varying temperatures. What are its three layers?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="A" checked>
+            <label class="form-check-label">Crust, corona, core</label>
+          </div>          
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="B">
+            <label class="form-check-label">Mantle, convection zone, core</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="C">
+            <label class="form-check-label">Crust, mantle, core</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="D">
+            <label class="form-check-label">Crust, mantle, convection zone</label>
+          </div>
+        </div>
+        <!-- QUESTION 3 -->
+        <div class="my-5">
+          <p class="lead font-weight-normal">3. How many teeth does an adult human have?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="A" checked>
+            <label class="form-check-label">36</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="B">
+            <label class="form-check-label">30</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="C">
+            <label class="form-check-label">34</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="D">
+            <label class="form-check-label">32</label>
+          </div>
+        </div>
+        <!-- QUESTION 4 -->
+        <div class="my-5">
+          <p class="lead font-weight-normal">4. What is the rarest blood type?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="A" checked>
+            <label class="form-check-label">A Negative</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="B">
+            <label class="form-check-label">AB Negative</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="C">
+            <label class="form-check-label">B Negative</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="D">
+            <label class="form-check-label">O Positive</label>
+          </div>
+        </div>        
+        <!-- QUESTION 5 -->
+        <div class="my-5">
+          <p class="lead font-weight-normal">5. Who was the scientist to propose the three laws of motion?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q5" value="A" checked>
+            <label class="form-check-label">Albert Einstein</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q5" value="B">
+            <label class="form-check-label">Louis Pasteur</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q5" value="C">
+            <label class="form-check-label">Isaac Newton</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q5" value="D">
+            <label class="form-check-label">Marie Curie</label>
+          </div>
+        </div>
+        <!-- QUESTION 6 -->
+        <div class="my-5">
+          <p class="lead font-weight-normal">6. What do we call the different layers of gas that surround the planet Earth></p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q6" value="A" checked>
+            <label class="form-check-label">Atmosphere</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q6" value="B">
+            <label class="form-check-label">Stratosphere</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q6" value="C">
+            <label class="form-check-label">Troposphere </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q6" value="D">
+            <label class="form-check-label">Mesosphere</label>
+          </div>
+        </div>
+        <!-- QUESTION 7 -->
+        <div class="my-5">
+          <p class="lead font-weight-normal">7. Which planet in our solar system spins the fastest, completing one whole rotation in just 10 hours?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q7" value="A" checked>
+            <label class="form-check-label">Mercury</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q7" value="B">
+            <label class="form-check-label">Mars </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q7" value="C">
+            <label class="form-check-label">Jupiter</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q7" value="D">
+            <label class="form-check-label">Uranus</label>
+          </div>
+        </div>
+        <!-- QUESTION 8 -->
+        <div class="my-5">
+          <p class="lead font-weight-normal">8. Scientists believe that the continents of the earth were all one large landmass 280 million years ago. What was this landmass called?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q8" value="A" checked>
+            <label class="form-check-label">Laurasia</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q8" value="B">
+            <label class="form-check-label">Pangea</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q8" value="C">
+            <label class="form-check-label">Gondwana</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q8" value="D">
+            <label class="form-check-label">Rheic</label>
+          </div>
+        </div>
+        <!-- QUESTION 9 -->
+        <div class="my-5">
+          <p class="lead font-weight-normal">9. Which part of the brain deals with hearing and language?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q9" value="A" checked>
+            <label class="form-check-label">The occipital lobe</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q9" value="B">
+            <label class="form-check-label">The parietal lobe</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q9" value="C">
+            <label class="form-check-label">The frontal lobe </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q9" value="D">
+            <label class="form-check-label">The temporal lobe</label>
+          </div>
+        </div>
+        <!-- QUESTION 10 -->
+        <div class="my-5">
+          <p class="lead font-weight-normal">10. What is the lunar phase called that happens when less than a full moon but more than a half moon is illuminated.</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q10" value="A" checked>
+            <label class="form-check-label">Gibbous</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q10" value="B">
+            <label class="form-check-label">First quarter</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q10" value="C">
+            <label class="form-check-label">Second quarter</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q10" value="D">
+            <label class="form-check-label">Crescent</label>
+          </div>
+        </div>
+
+
+        <div class="text-center">
+          <input type="submit" class="btn btn-light"> 
+        </div>
+      </form>
+
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
